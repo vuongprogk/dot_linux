@@ -15,7 +15,6 @@
     "temperature",
     "custom/updates",
     "clock",
-    "custom/notifications",
     "disk",
   ],
   "modules-right": [
@@ -23,25 +22,21 @@
     "pulseaudio",
     "pulseaudio#microphone",
     "battery",
-    "custom/power"
+    "custom/power",
   ],
   "hyprland/window": {
     "format": "{}",
   },
   "backlight": {
     "format": "{icon} {percent}%",
-    "format-icons": [
-      "󰃞",
-      "󰃟",
-      "󰃠"
-    ],
+    "format-icons": ["󰃞", "󰃟", "󰃠"],
   },
   "idle_inhibitor": {
     "format": "{icon}",
     "format-icons": {
       "activated": " ",
-      "deactivated": " "
-    }
+      "deactivated": " ",
+    },
   },
   "hyprland/workspaces": {
     "sort-by-name": true,
@@ -73,15 +68,11 @@
   "temperature": {
     "critical-threshold": 80,
     "format": "{temperatureC}°C",
-    "format-icons": [
-      "",
-      "",
-      ""
-    ]
+    "format-icons": ["", "", ""],
   },
   "cpu": {
     "format": "{usage}% CPU",
-    "tooltip": false
+    "tooltip": false,
   },
   "battery": {
     "interval": 1,
@@ -93,13 +84,7 @@
     "format": "{icon} {capacity}%",
     "format-charging": " {capacity}%",
     "format-plugged": " {capacity}%",
-    "format-icons": [
-      " ",
-      " ",
-      " ",
-      " ",
-      " "
-    ],
+    "format-icons": [" ", " ", " ", " ", " "],
   },
   "pulseaudio": {
     "format": "{icon} {volume}%",
@@ -115,11 +100,7 @@
       "phone": " ",
       "portable": " ",
       "car": " ",
-      "default": [
-        "",
-        " ",
-        " "
-      ],
+      "default": ["", " ", " "],
     },
   },
   "pulseaudio#microphone": {
@@ -152,6 +133,6 @@
   "custom/power": {
     "format": "",
     "on-click": "wlogout",
-    "on-click-right": "killall wlogout"
+    "on-click-right": "killall wlogout",
   },
 }
